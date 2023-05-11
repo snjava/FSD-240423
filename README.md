@@ -1,7 +1,7 @@
 # Core Java, SQL, Spring Boot
 
-* **[Core Java](https://github.com/snjava/FSD-230423/tree/main/code/corejava)**
-#### Core Java Reference Document _([here](https://github.com/snjava/FSD-230423/blob/main/docs/CoreJava.docx))_
+* **[Core Java](https://github.com/snjava/FSD-240423/tree/main/code/corejava)**
+#### Core Java Reference Document _([here](https://github.com/snjava/FSD-240423/blob/main/docs/CoreJava.docx))_
 
 
 #### Important Links
