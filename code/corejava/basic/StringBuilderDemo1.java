@@ -12,3 +12,5 @@ public class StringBuilderDemo1 {
 
 	}
 }
+// javac StringBuilderDemo1.java
+// java StringBuilderDemo1 value1 value2
