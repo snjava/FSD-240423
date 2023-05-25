@@ -1,28 +1,48 @@
 public class EnacapsulationDemo {
 	public static void main(String[] args) {
 		Student stud = new Student();
-		stud.studId = 123;
-		stud.name = "Abc";
-		stud.age = 22.3;
-		
-		if(stud.age>=5 && stud.age<=50)
+		stud.setStudId(123);
+		stud.setName("Abc");
+		stud.setStudAge(22.3);
+	}
+}
+
+// Encapsulated, DTO (Data Transfer Object)
+class Student {
+	private int studId;
+	private String studName;
+	private double studAge;
+	
+	public int getStudId() {
+		return studId;
+	}
+	public String getStudName() {
+		return studName;
+	}
+	public double getStudAge() {
+		return studAge;
+	}
+	
+	
+	public void setStudId(int id) {
+		studId = id;
+	}
+	public void setName(String nm) {
+		studName = nm;
+	}
+	public void setStudAge(double age) {
+		if(age>=5 && age<=50)
 		{
-			stud.printStudent();
+			studAge = age;
 		} else {
 			System.out.println("Invalid Age....");
 		}
 	}
-}
-
-class Student {
-	int studId;
-	String name;
-	double age;
 	
 	public void printStudent() {
 		System.out.println("Id : " + studId);
-		System.out.println("Name : " + name);
-		System.out.println("Age : " + age);
+		System.out.println("Name : " + studName);
+		System.out.println("Age : " + studAge);
 	}
 }
 
