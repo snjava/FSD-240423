@@ -2,6 +2,8 @@
 public class InheritanceDemo1 {
 	public static void main(String[] args) {
 		SoftwareDev dev = new SoftwareDev();
+		System.out.println(dev.toString());
+		
 		dev.salary = 234232.32;
 		dev.city = "Pune";
 		dev.id = 121;
