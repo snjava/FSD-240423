@@ -1,8 +1,10 @@
+import java.io.FileReader;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionIntro {
 	public static void main(String[] args) {
+		//FileReader reader = new FileReader("C://test.txt");
 		System.out.println("Main Method Started");
 		Scanner scan = new Scanner(System.in);
 		try {
@@ -18,6 +20,11 @@ public class ExceptionIntro {
 		}
 		catch(InputMismatchException ex) {
 			System.out.println("Invalid Input. Please provide numeric values only..");
+		}
+		catch(RuntimeException e) {
+			System.out.println("Something went wrong");
+		} finally {
+			scan.close();
 		}
 		System.out.println("Main Method End");
 	}
