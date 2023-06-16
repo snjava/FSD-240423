@@ -1,12 +1,4 @@
 import java.util.Scanner;
-
-/*
- 1. Identification of Exception Scenario
- 2. Identify the Exception class.
- 3. Create Object of Exception class.
- 4. Throw the object of exception from the statement.
-*/
-
 public class TryCatchFinally {
 	public static void main(String[] args) {
 		int arr[] = {23,25,5,98,0,43,30,76,9};
