@@ -4,10 +4,10 @@ public class DefaultAndCustonThread {
 		System.out.println("Started main() method");
 		Thread th = Thread.currentThread();
 		System.out.println(th);
-		CustomThread ct = new CustomThread();
+		CustomThread ct = new CustomThread(); // New Stage
 		ct.setName("my-thread");
 		ct.setPriority(10);
-		ct.start();
+		ct.start();		// Runnable stage
 		
 		for(int i = 1 ; i<=10; i++) {
 			System.out.println(i);
@@ -19,12 +19,12 @@ public class DefaultAndCustonThread {
 }
 
 class CustomThread extends Thread {
-	public void run() {
+	public void run() {		// Running Stage
 		System.out.println("Started Custom thread");
 		Thread th = Thread.currentThread();
 		System.out.println(th);
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(5000);  // Pause stage for 5 sec
 		} catch(InterruptedException e) {
 			e.printStackTrace();
 		}
