@@ -15,5 +15,4 @@ public class InsertData {
 			e.printStackTrace();
 		}
 	}
-
 }
