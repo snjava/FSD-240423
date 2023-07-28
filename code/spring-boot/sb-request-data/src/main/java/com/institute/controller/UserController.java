@@ -2,8 +2,11 @@ package com.institute.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.institute.dto.UserInfo;
 
 @RestController
 public class UserController {
@@ -24,6 +27,37 @@ public class UserController {
 		String fullName = fn + " " + mn + " " + ln;
 		return "Hello, " + fullName;
 	}
+	
+	
+	// Accept User data using JSON, Data Contains name, email, contact
+	/*
+	 	{
+	 		"name": "Abc",
+	 		"email": "abc@gmail.com",
+	 		"contact": "9988776677"
+	 	}
+	 */
+	@GetMapping("/user-data-3")
+	public String UserDetails3(@RequestBody UserInfo info) {
+		System.out.println("Name : " + info.getName());
+		System.out.println("Email : " + info.getEmail());
+		System.out.println("Contact : " + info.getContact());
+		return "Hi, User "+info.getName();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
 
