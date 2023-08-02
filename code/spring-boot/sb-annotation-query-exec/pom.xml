@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.institute</groupId>
-	<artifactId>sb-jpa-crud</artifactId>
+	<artifactId>sb-annotation-query-exec</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sb-jpa-crud</name>
+	<name>sb-annotation-query-exec</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -26,13 +26,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.6.12</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>com.mysql</groupId>
