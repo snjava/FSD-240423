@@ -14,6 +14,9 @@ import javax.persistence.Transient;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+// HQL: select p from ProductEntity p where status=true  (HQL -> SQL)
+// SQL: select * from prodinfo where isavailable=true;
+
 @Entity
 @Table(name = "prodinfo")
 public class ProductEntity {
